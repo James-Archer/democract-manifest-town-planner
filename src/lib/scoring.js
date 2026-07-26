@@ -45,8 +45,10 @@ export function calculateDepartmentScores(placements) {
       multiplier *= 0.5
     }
 
+    const footprintArea = (placement.footprint?.width ?? 1) * (placement.footprint?.height ?? 1)
+
     for (const department of DEPARTMENTS) {
-      const value = placement.departmentScores[department] ?? 0
+      const value = (placement.departmentScores[department] ?? 0) * footprintArea
       baseScores[department] += value
       adjustedScores[department] += value * multiplier
     }

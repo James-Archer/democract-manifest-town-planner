@@ -51,6 +51,9 @@
   let statusMessage = 'Pick a zone to paint, or select a building to place.'
   let showScoreModal = false
   let showDataModal = false
+  let buildingSearch = ''
+  let scoreSortColumn = 'department'
+  let scoreSortDirection = 'asc'
 
   $: selectedBuilding =
     buildingsCatalog.find((building) => building.name === selectedBuildingName) ?? null
@@ -91,6 +94,28 @@
     (placementPreview?.occupiedCells ?? []).map((cell) => cellKey(cell.row, cell.col))
   )
   $: scoreSummary = calculateDepartmentScores(placements)
+
+  $: filteredBuildings = buildingsCatalog.filter((building) =>
+    building.name.toLowerCase().includes(buildingSearch.trim().toLowerCase())
+  )
+
+  $: sortedScoreRows = [...DEPARTMENTS]
+    .map((department) => ({
+      department,
+      base: scoreSummary.baseScores[department],
+      adjusted: scoreSummary.adjustedScores[department],
+    }))
+    .sort((a, b) => {
+      let comparison
+      if (scoreSortColumn === 'department') {
+        comparison = a.department.localeCompare(b.department)
+      } else if (scoreSortColumn === 'base') {
+        comparison = (a.base ?? 0) - (b.base ?? 0)
+      } else {
+        comparison = (a.adjusted ?? 0) - (b.adjusted ?? 0)
+      }
+      return scoreSortDirection === 'asc' ? comparison : -comparison
+    })
 
   $: zoneRegions = placementMode ? [] : computeZoneRegions(zonesGrid)
 
@@ -543,14 +568,25 @@
     statusMessage = message
   }
 
+  function toggleScoreSort(column) {
+    if (scoreSortColumn === column) {
+      scoreSortDirection = scoreSortDirection === 'asc' ? 'desc' : 'asc'
+    } else {
+      scoreSortColumn = column
+      scoreSortDirection = column === 'department' ? 'asc' : 'desc'
+    }
+  }
+
   function clearPlan() {
-    if (!window.confirm('Clear all placed buildings from this plan?')) {
+    if (!window.confirm('Clear all placed buildings and reset zoning?')) {
       return
     }
 
     placements = []
     selectedPlacementId = null
-    statusMessage = 'Plan cleared.'
+    zonesGrid = createZoneGrid(GRID_ROWS, GRID_COLS, DEFAULT_ZONE)
+    rectangleStart = null
+    statusMessage = 'Plan and zoning cleared.'
   }
 
   function paintZone(row, col) {
@@ -1155,8 +1191,15 @@
           <span>Override zoning requirements</span>
         </label>
 
+        <input
+          type="search"
+          class="building-search"
+          placeholder="Search buildings…"
+          bind:value={buildingSearch}
+        />
+
         <div class="building-list">
-          {#each buildingsCatalog as building (building.name)}
+          {#each filteredBuildings as building (building.name)}
             <button
               type="button"
               class="building-button {selectedBuildingName === building.name ? 'active' : ''}"
@@ -1171,6 +1214,9 @@
               >
             </button>
           {/each}
+          {#if filteredBuildings.length === 0}
+            <p class="hint">No buildings match “{buildingSearch}”.</p>
+          {/if}
         </div>
 
         {#if selectedBuilding && selectedBuilding.footprints.length > 1}
@@ -1413,17 +1459,45 @@
       <table>
         <thead>
           <tr>
-            <th>Department</th>
-            <th>Base</th>
-            <th>Adjusted</th>
+            <th>
+              <button
+                type="button"
+                class="sort-header"
+                on:click={() => toggleScoreSort('department')}
+              >
+                Department{scoreSortColumn === 'department'
+                  ? scoreSortDirection === 'asc'
+                    ? ' ▲'
+                    : ' ▼'
+                  : ''}
+              </button>
+            </th>
+            <th>
+              <button type="button" class="sort-header" on:click={() => toggleScoreSort('base')}>
+                Base{scoreSortColumn === 'base' ? (scoreSortDirection === 'asc' ? ' ▲' : ' ▼') : ''}
+              </button>
+            </th>
+            <th>
+              <button
+                type="button"
+                class="sort-header"
+                on:click={() => toggleScoreSort('adjusted')}
+              >
+                Adjusted{scoreSortColumn === 'adjusted'
+                  ? scoreSortDirection === 'asc'
+                    ? ' ▲'
+                    : ' ▼'
+                  : ''}
+              </button>
+            </th>
           </tr>
         </thead>
         <tbody>
-          {#each DEPARTMENTS as department (department)}
+          {#each sortedScoreRows as row (row.department)}
             <tr>
-              <td>{department}</td>
-              <td>{formatScore(scoreSummary.baseScores[department])}</td>
-              <td>{formatScore(scoreSummary.adjustedScores[department])}</td>
+              <td>{row.department}</td>
+              <td>{formatScore(row.base)}</td>
+              <td>{formatScore(row.adjusted)}</td>
             </tr>
           {/each}
         </tbody>

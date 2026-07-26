@@ -17,6 +17,7 @@ export const DEPARTMENTS = [
 export const ZONES = [
   'Any',
   'Residential',
+  'High density residential',
   'Commercial',
   'Industrial',
   'Park',
@@ -29,6 +30,7 @@ export const DEFAULT_ZONE = 'Residential'
 export const ZONE_COLORS = {
   Any: '#d1d5db',
   Residential: '#bfdbfe',
+  'High density residential': '#93c5fd',
   Commercial: '#fde68a',
   Industrial: '#fecaca',
   Park: '#bbf7d0',

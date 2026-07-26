@@ -209,6 +209,15 @@ input[type='number'] {
   overflow: auto;
 }
 
+.building-search {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 7px 10px;
+  margin-bottom: 8px;
+  font: inherit;
+}
+
 .building-button {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -433,6 +442,20 @@ input[type='number'] {
   border-bottom: 1px solid var(--line);
   padding: 8px;
   text-align: left;
+}
+
+.sort-header {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  color: inherit;
+}
+
+.sort-header:hover {
+  text-decoration: underline;
 }
 
 .data-table td input[type='text'],
