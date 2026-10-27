@@ -39,9 +39,6 @@ function parseStructureValue(value) {
   if (isNullLike(normalized)) {
     return null
   }
-  if (normalized === STRUCTURE_RULE_TEXT) {
-    return null
-  }
   return normalized
 }
 
@@ -102,13 +99,21 @@ export function parseBuildingsCsv(csvText) {
   const buildingNames = new Set(buildings.map((building) => building.name))
 
   for (const building of buildings) {
-    if (building.positiveStructure && !buildingNames.has(building.positiveStructure)) {
+    if (
+      building.positiveStructure &&
+      building.positiveStructure !== STRUCTURE_RULE_TEXT &&
+      !buildingNames.has(building.positiveStructure)
+    ) {
       issues.push(
         `Positive structure reference not found for ${building.name}: ${building.positiveStructure}`
       )
     }
 
-    if (building.negativeStructure && !buildingNames.has(building.negativeStructure)) {
+    if (
+      building.negativeStructure &&
+      building.negativeStructure !== STRUCTURE_RULE_TEXT &&
+      !buildingNames.has(building.negativeStructure)
+    ) {
       issues.push(
         `Negative structure reference not found for ${building.name}: ${building.negativeStructure}`
       )

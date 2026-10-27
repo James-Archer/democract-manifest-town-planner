@@ -1,4 +1,4 @@
-import { DEPARTMENTS } from './config'
+import { DEPARTMENTS, STRUCTURE_RULE_TEXT } from './config'
 import { arePlacementsOrthogonallyAdjacent } from './gridEngine'
 
 function isStructureAdjacencyMet(sourcePlacement, targetBuildingName, placements) {
@@ -21,20 +21,53 @@ function isStructureAdjacencyMet(sourcePlacement, targetBuildingName, placements
   return false
 }
 
-export function calculateDepartmentScores(placements) {
+function isZonedMixedUse(placement, zonesGrid) {
+  return placement.occupiedCells.every((cell) => zonesGrid?.[cell.row]?.[cell.col] === 'Mixed use')
+}
+
+function isMixedUseAdjacencyMet(sourcePlacement, placements, zonesGrid) {
+  if (!isZonedMixedUse(sourcePlacement, zonesGrid)) {
+    return false
+  }
+
+  for (const candidate of placements) {
+    if (candidate.id === sourcePlacement.id) {
+      continue
+    }
+    if (!isZonedMixedUse(candidate, zonesGrid)) {
+      continue
+    }
+    if (arePlacementsOrthogonallyAdjacent(sourcePlacement, candidate)) {
+      return true
+    }
+  }
+
+  return false
+}
+
+function isStructureConditionMet(sourcePlacement, targetBuildingName, placements, zonesGrid) {
+  if (targetBuildingName === STRUCTURE_RULE_TEXT) {
+    return isMixedUseAdjacencyMet(sourcePlacement, placements, zonesGrid)
+  }
+  return isStructureAdjacencyMet(sourcePlacement, targetBuildingName, placements)
+}
+
+export function calculateDepartmentScores(placements, zonesGrid) {
   const baseScores = Object.fromEntries(DEPARTMENTS.map((department) => [department, 0]))
   const adjustedScores = Object.fromEntries(DEPARTMENTS.map((department) => [department, 0]))
 
   for (const placement of placements) {
-    const positiveActive = isStructureAdjacencyMet(
+    const positiveActive = isStructureConditionMet(
       placement,
       placement.positiveStructure,
-      placements
+      placements,
+      zonesGrid
     )
-    const negativeActive = isStructureAdjacencyMet(
+    const negativeActive = isStructureConditionMet(
       placement,
       placement.negativeStructure,
-      placements
+      placements,
+      zonesGrid
     )
 
     let multiplier = 1

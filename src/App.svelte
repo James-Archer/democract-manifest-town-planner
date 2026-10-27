@@ -2,7 +2,15 @@
   import { onMount } from 'svelte'
 
   import csvText from './data/buildingData.csv?raw'
-  import { DEFAULT_ZONE, DEPARTMENTS, GRID_COLS, GRID_ROWS, ZONES, ZONE_COLORS } from './lib/config'
+  import {
+    DEFAULT_ZONE,
+    DEPARTMENTS,
+    GRID_COLS,
+    GRID_ROWS,
+    STRUCTURE_RULE_TEXT,
+    ZONES,
+    ZONE_COLORS,
+  } from './lib/config'
   import { parseBuildingsCsv } from './lib/csv'
   import { buildOccupancyGrid, canPlaceBuilding, cellKey, createZoneGrid } from './lib/gridEngine'
   import { calculateDepartmentScores } from './lib/scoring'
@@ -89,7 +97,7 @@
   $: previewCellKeys = new Set(
     (placementPreview?.occupiedCells ?? []).map((cell) => cellKey(cell.row, cell.col))
   )
-  $: scoreSummary = calculateDepartmentScores(placements)
+  $: scoreSummary = calculateDepartmentScores(placements, zonesGrid)
 
   $: filteredBuildings = buildingsCatalog.filter((building) =>
     building.name.toLowerCase().includes(buildingSearch.trim().toLowerCase())
@@ -1646,6 +1654,7 @@
                     )}
                 >
                   <option value="">None</option>
+                  <option value={STRUCTURE_RULE_TEXT}>{STRUCTURE_RULE_TEXT}</option>
                   {#each buildingsCatalog as option (option.name)}
                     <option value={option.name}>{option.name}</option>
                   {/each}
@@ -1662,6 +1671,7 @@
                     )}
                 >
                   <option value="">None</option>
+                  <option value={STRUCTURE_RULE_TEXT}>{STRUCTURE_RULE_TEXT}</option>
                   {#each buildingsCatalog as option (option.name)}
                     <option value={option.name}>{option.name}</option>
                   {/each}
