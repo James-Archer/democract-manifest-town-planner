@@ -24,7 +24,6 @@
 
   let activeZone = DEFAULT_ZONE
   let selectedBuildingName = null
-  let selectedFootprintIndex = 0
   let isRotated = false
   let editorMode = 'zone'
   let placementMode = false
@@ -58,10 +57,7 @@
   $: selectedBuilding =
     buildingsCatalog.find((building) => building.name === selectedBuildingName) ?? null
 
-  $: selectedFootprint =
-    selectedBuilding?.footprints[
-      Math.min(selectedFootprintIndex, (selectedBuilding?.footprints.length ?? 1) - 1)
-    ] ?? null
+  $: selectedFootprint = selectedBuilding?.footprints[0] ?? null
 
   $: placementFootprint = selectedFootprint
     ? isRotated
@@ -323,6 +319,11 @@
         ? rawBuilding.negativeStructure.trim()
         : null
 
+    const imageName =
+      typeof rawBuilding.imageName === 'string' && rawBuilding.imageName.trim()
+        ? rawBuilding.imageName.trim()
+        : null
+
     return {
       name,
       allowedZones: allowedZones.length > 0 ? allowedZones : ['Any'],
@@ -330,12 +331,14 @@
       departmentScores,
       positiveStructure,
       negativeStructure,
+      imageName,
     }
   }
 
   function getSnapshot() {
     return {
       version: SNAPSHOT_VERSION,
+      csvSignature: csvText,
       zones,
       zoneColors,
       buildingsCatalog,
@@ -367,9 +370,11 @@
       }
     }
 
-    const rawBuildings = Array.isArray(snapshot.buildingsCatalog)
-      ? snapshot.buildingsCatalog
-      : [...parsedBuildings]
+    const csvMatchesCache = snapshot.csvSignature === csvText
+    const rawBuildings =
+      csvMatchesCache && Array.isArray(snapshot.buildingsCatalog)
+        ? snapshot.buildingsCatalog
+        : [...parsedBuildings]
     const nextBuildings = rawBuildings.map(normalizeBuilding).filter(Boolean)
 
     if (nextBuildings.length === 0) {
@@ -460,6 +465,7 @@
         departmentScores: { ...buildingDef.departmentScores },
         positiveStructure: buildingDef.positiveStructure,
         negativeStructure: buildingDef.negativeStructure,
+        imageName: buildingDef.imageName,
         fillColor: rawPlacement?.fillColor ?? colors.fill,
         borderColor: rawPlacement?.borderColor ?? colors.border,
         textColor: rawPlacement?.textColor ?? colors.text,
@@ -513,7 +519,6 @@
   function beginPlacement(buildingName) {
     editorMode = 'building'
     selectedBuildingName = buildingName
-    selectedFootprintIndex = 0
     isRotated = false
     selectedPlacementId = null
     placementMode = true
@@ -690,6 +695,7 @@
         departmentScores: selectedBuilding.departmentScores,
         positiveStructure: selectedBuilding.positiveStructure,
         negativeStructure: selectedBuilding.negativeStructure,
+        imageName: selectedBuilding.imageName,
         fillColor: colors.fill,
         borderColor: colors.border,
         textColor: colors.text,
@@ -757,6 +763,10 @@
     }
 
     if (target.closest('[data-grid-root="true"]')) {
+      return
+    }
+
+    if (target.closest('[data-placement-ui="true"]')) {
       return
     }
 
@@ -994,10 +1004,7 @@
 
       return {
         ...building,
-        footprints: [
-          { width, height, label: `${width}x${height}` },
-          ...building.footprints.slice(1),
-        ],
+        footprints: [{ width, height, label: `${width}x${height}` }],
       }
     })
   }
@@ -1207,11 +1214,7 @@
             >
               <strong>{building.name}</strong>
               <span>Zones: {building.allowedZones.join(', ')}</span>
-              <span
-                >Footprint: {building.footprints
-                  .map((footprint) => footprint.label)
-                  .join(' / ')}</span
-              >
+              <span>Footprint: {building.footprints[0]?.label}</span>
             </button>
           {/each}
           {#if filteredBuildings.length === 0}
@@ -1219,17 +1222,8 @@
           {/if}
         </div>
 
-        {#if selectedBuilding && selectedBuilding.footprints.length > 1}
-          <label class="field-label" for="footprint-select">Footprint variation</label>
-          <select id="footprint-select" bind:value={selectedFootprintIndex}>
-            {#each selectedBuilding.footprints as footprint, index (`${footprint.label}-${index}`)}
-              <option value={index}>{footprint.label}</option>
-            {/each}
-          </select>
-        {/if}
-
         {#if selectedBuilding}
-          <div class="rotation-controls">
+          <div class="rotation-controls" data-placement-ui="true">
             <p class="hint">Current orientation: {placementFootprint?.label ?? 'N/A'}</p>
             <button type="button" class="secondary" on:click={rotateFootprint}>Rotate 90 deg</button
             >
@@ -1417,6 +1411,14 @@
                 }
               }}
             >
+              {#if placement.imageName}
+                <img
+                  class="placed-building-image"
+                  src={`${import.meta.env.BASE_URL}images/buildings/${encodeURIComponent(placement.imageName)}`}
+                  alt=""
+                  draggable="false"
+                />
+              {/if}
               <div class="placed-building-content">
                 <span class="placed-building-name">{placement.name}</span>
                 <button

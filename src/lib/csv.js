@@ -25,26 +25,10 @@ function parseFootprintToken(token) {
   }
 }
 
-function parseFootprints(primaryFootprint, altFootprint) {
-  const rawTokens = [primaryFootprint, altFootprint]
-    .filter((value) => normalizeText(value).length > 0)
-    .flatMap((value) =>
-      normalizeText(value)
-        .split(/\bor\b|\//gi)
-        .map((entry) => entry.trim())
-        .filter(Boolean)
-    )
-
-  const parsed = []
-  for (const token of rawTokens) {
-    const footprint = parseFootprintToken(token)
-    if (footprint) {
-      parsed.push(footprint)
-    }
-  }
-
-  if (parsed.length > 0) {
-    return parsed
+function parseFootprints(footprint) {
+  const parsed = parseFootprintToken(footprint)
+  if (parsed) {
+    return [parsed]
   }
 
   return [{ width: 1, height: 1, label: '1x1' }]
@@ -96,7 +80,7 @@ export function parseBuildingsCsv(csvText) {
 
   const buildings = parsed.data.map((row, index) => {
     const name = normalizeText(row.Building)
-    const footprints = parseFootprints(row.Footprint, row['Alt Footprint'])
+    const footprints = parseFootprints(row.Footprint)
     const allowedZones = parseAllowedZones(row)
 
     if (!name) {
@@ -111,6 +95,7 @@ export function parseBuildingsCsv(csvText) {
       departmentScores: parseDepartmentScores(row),
       positiveStructure: parseStructureValue(row['Positive Structure']),
       negativeStructure: parseStructureValue(row['Negative Structure']),
+      imageName: normalizeText(row['Image Name']) || null,
     }
   })
 

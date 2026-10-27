@@ -375,6 +375,18 @@ input[type='number'] {
   justify-content: space-between;
   gap: 4px;
   padding: 3px;
+  position: relative;
+  z-index: 1;
+}
+
+.placed-building-image {
+  position: absolute;
+  inset: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .placed-building-name {

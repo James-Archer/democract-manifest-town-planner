@@ -1,54 +1,55 @@
-Building,Zone 1,Zone 2,Parks and Rec,Health,Transportation,Library,Police,Fire,Education,Animal Control,Business,Resident,Footprint,Alt Footprint,Positive Structure,Negative Structure
-Animal Shelter,Commercial,0,0,0,0,0,-1,0,0,3,0,0,6x4,,Bus Stop,School
-Beehives,Park,0,1,1,0,0,0,0,0,2,0,0,2x2,,Library,Emergency Phone
-Bus Exchange,Any,0,0,0,3,2,0,0,1,0,0,0,6x1,,Pond,Animal Shelter
-Bus Stop,Any,0,1,0,2,1,0,0,1,0,0,1,2x1,,EV Charger,Newspaper Stand
-Cafe,Mixed use,Commercial,1,0,0,2,1,-1,1,-1,2,2,3x2,,Radio Station,Training Centre
-Carpark,Any,0,0,0,1,0,0,0,0,0,0,0,2x1,,Mounted Police Unit (Stables),Duck Pond
-Casino,Commercial,0,0,-3,0,0,-3,0,-3,0,3,0,12x8,,Emergency Phone,Grass land
-Chemist,Mixed use,Commercial,0,2,0,0,0,0,0,0,2,1,3x2,,Subway Entrance,Home Improvement Store
-Doctors Offices,Mixed use,Commercial,0,2,1,0,0,0,0,0,1,1,4x3,,Bus Exchange,Water Treatment Plant
-Donut Stand,Any,0,0,-2,0,0,3,0,0,-1,1,2,2x1,,Casino,Pond
-Duck Pond,Park,0,2,-1,0,0,0,2,0,2,0,0,2x3,,EV Charger,Fire Hydrant
-Emergency Operations Centre,Commercial,0,0,1,-1,0,2,2,0,2,0,-1,4x4,,Carpark,Protected Habitat
-Emergency Phone,Any,0,0,0,0,0,2,2,0,0,0,0,1x1,,Sports Courts,Library
-EV Charger,Any,0,0,0,3,0,0,-1,0,0,1,1,1x1,,School,Medical Centre
-Fire Hydrant,Any,0,0,0,0,0,-1,2,0,0,0,1,1x1,,Forensic Lab,Short Stay Accomodation for Government Employees
-Fire Station,Any,0,0,0,0,0,-2,3,1,0,0,-1,6x4,,Playground,Mounted Police Unit (Stables)
-Firetruck Shelter,Any,0,0,0,0,0,0,3,0,0,0,0,3x3,,"All other mixed use buildings, when both are zoned as mixed use",0
-Forensic Lab,Commercial,0,0,1,0,0,3,1,0,0,1,0,5x3,,"All other mixed use buildings, when both are zoned as mixed use",0
-Grass land,Park,0,1,0,0,0,0,1,0,1,0,0,1x1,,"All other mixed use buildings, when both are zoned as mixed use",0
-Grocers,Mixed use,Commercial,0,2,1,-1,1,0,0,0,3,2,4x3,,Taxi Cab rank,House
-Hairdressers,Mixed use,Commercial,0,1,0,0,0,0,0,0,1,2,2x2,,Water Treatment Plant,EV Charger
-Home Improvement Store,Industrial,Commercial,0,0,0,0,1,2,0,1,2,2,8x6,,Home Improvement Store,Playground
-House,Residential,0,0,0,0,0,0,0,0,0,0,3,3x4,4x4,"All other mixed use buildings, when both are zoned as mixed use",0
-Library,Commercial,0,-1,1,0,3,0,-2,1,1,-1,1,6x6,,"All other mixed use buildings, when both are zoned as mixed use",0
-Maker Space,Mixed use,Commercial,1,0,0,2,0,0,1,0,0,2,4x3,,"All other mixed use buildings, when both are zoned as mixed use",0
-Mechanic,Industrial,0,0,-1,2,0,1,1,1,0,2,0,5x3,,"All other mixed use buildings, when both are zoned as mixed use",0
-Medical Centre,Commercial,0,0,3,1,0,0,0,0,0,2,2,8x4,,Petting Zoo,Warehouse
-Mounted Police Unit (Stables),Park,0,0,0,-1,0,2,0,0,2,0,0,5x3,,Sports Courts,Donut Stand
-Museum,Commercial,0,2,0,1,3,0,0,1,0,0,1,6x4,,Street Gym,Beehives
-Native Plant Reserve,Conservation,0,3,0,0,0,0,-1,0,2,0,1,3x2,,Beehives,Warehouse
-Newsagency,Mixed use,Commercial,0,0,0,0,0,0,1,0,2,1,2x2,,Duck Pond,Sub-station
-Newspaper Stand,Any,0,0,0,0,1,0,0,1,0,1,1,1x1,,House,Bus Stop
-Petting Zoo,Commercial,0,2,-1,0,0,0,0,1,3,2,-2,8x3,,Emergency Phone,Mechanic
-Playground,Park,0,3,-1,0,0,0,1,2,0,0,2,3x3,,Firetruck Shelter,Taxi Cab rank
-Police Station,Any,0,0,1,0,0,3,-2,0,0,0,-1,6x4,,Grass land,Casino
-Pond,Park,0,1,-1,0,0,0,3,0,1,0,1,3x3,,Fire Hydrant,Emergency Operations Centre
-Protected Habitat,Conservation,0,3,0,0,0,0,-2,0,3,-1,1,8x3,,Emergency Phone,Fire Hydrant
-Radio Station,Commercial,0,0,1,0,0,2,1,0,0,2,0,5x4,,Museum,Street Gym
-Restaurant,Mixed use,Commercial,0,1,0,0,1,-1,0,-1,2,2,4x3,,Vet,0
-Rose Garden,Park,0,2,0,0,0,0,0,0,2,0,1,2x2,,Emergency Operations Centre,Native Plant Reserve
-School,Any,0,0,1,1,1,0,0,3,0,0,1,10x8,,Firetruck Shelter,Street Library
-Security Office,Commercial,0,0,0,0,0,2,0,0,1,2,0,2x2,,Rose Garden,Firetruck Shelter
-Short Stay Accomodation for Government Employees,Residential,0,0,2,0,0,2,2,0,0,0,0,4x3,,Protected Habitat,Subway Entrance
-Sports Courts,Park,Commercial,2,2,0,0,0,1,2,0,-2,1,4x3,,Animal Shelter,Emergency Phone
-Street Gym,Park,0,1,2,-1,0,0,1,2,0,-2,1,4x1,,Short Stay Accomodation for Government Employees,Fire Station
-Street Library,Park,0,1,0,0,3,0,0,1,0,-1,1,1x1,,Sub-station,Radio Station
-Sub-station,Industrial,0,-1,2,2,1,1,-2,2,-1,3,-2,5x5,,Security Office,Museum
-Subway Entrance,Any,0,-3,0,3,1,-1,1,1,-3,0,1,2x2,,Police Station,Petting Zoo
-Taxi Cab rank,Any,0,1,0,2,1,0,0,0,0,0,1,2x1,,Native Plant Reserve,Police Station
-Training Centre,Commercial,0,0,1,0,1,2,2,0,0,0,-1,6x4,,Donut Stand,Forensic Lab
-Vet,Commercial,0,0,2,0,0,0,0,0,2,1,1,4x3,,"All other mixed use buildings, when both are zoned as mixed use",0
-Warehouse,Industrial,0,0,0,0,0,0,0,0,0,1,-3,8x4,,Training Centre,School
-Water Treatment Plant,Industrial,0,-2,2,1,0,0,2,0,0,1,1,8x8,,Warehouse,Bus Exchange
+Building,Zone 1,Zone 2,Parks and Rec,Health,Transportation,Library,Police,Fire,Education,Animal Control,Business,Resident,Footprint,Alt Footprint,Positive Structure,Negative Structure,Image Name
+Animal Shelter,Commercial,0,0,0,0,0,-1,0,0,3,0,0,6x4,,Bus Stop,Sports Courts,animal shelter.png
+Beehives,Park,0,1,1,0,0,0,0,0,2,0,0,2x2,,Library,Emergency Phone,beehives.png
+Bus Exchange,Any,0,0,0,3,2,0,0,1,0,0,0,6x1,,Pond,Animal Shelter,bus exchange.png
+Bus Stop,Any,0,1,0,2,1,0,0,1,0,0,1,2x1,,Mechanic,Newspaper Stand,bus stop.png
+Cafe,Mixed use,Commercial,1,0,0,2,1,-1,1,-1,2,2,3x2,,"All other mixed use buildings, when both are zoned as mixed use",0,cafe.png
+Carpark,Any,0,0,0,1,0,0,0,0,0,0,0,2x1,,Mounted Police Unit (Stables),Duck Pond,car park.png
+Casino,Commercial,0,0,-3,0,0,-3,0,-3,0,3,0,12x8,,Emergency Phone,Grass land,casino.png
+Chemist,Mixed use,Commercial,0,2,0,0,0,0,0,0,2,1,3x2,,"All other mixed use buildings, when both are zoned as mixed use",0,chemist.png
+Doctors Offices,Mixed use,Commercial,0,2,1,0,0,0,0,0,1,1,4x3,,"All other mixed use buildings, when both are zoned as mixed use",0,doctors office.png
+Donut Stand,Any,0,0,-2,0,0,3,0,0,-1,1,2,2x1,,Casino,Pond,donut stand.png
+Duck Pond,Park,0,2,-1,0,0,0,2,0,2,0,0,2x3,,EV Charger,Fire Hydrant,duck pond.png
+Emergency Operations Centre,Commercial,0,0,1,-1,0,2,2,0,2,0,-1,4x4,,Carpark,Protected Habitat,emergency operations centre.png
+Emergency Phone,Any,0,0,0,0,0,2,2,0,0,0,0,1x1,,Sports Courts,Vet,emergency phone.png
+EV Charger,Any,0,0,0,3,0,0,-1,0,0,1,1,1x1,,School,Medical Centre,ev charger.png
+Fire Hydrant,Any,0,0,0,0,0,-1,2,0,0,0,1,1x1,,Forensic Lab,Short Stay Accomodation for Government Employees,fire hydrant.png
+Fire Station,Any,0,0,0,0,0,-2,3,1,0,0,-1,6x4,,Playground,Mounted Police Unit (Stables),fire station.png
+Firetruck Shelter,Any,0,0,0,0,0,0,3,0,0,0,0,3x3,,Duck Pond,Sub-station,fire truck shelter.png
+Forensic Lab,Commercial,0,0,1,0,0,3,1,0,0,1,0,5x3,,Water Treatment Plant,EV Charger,state forensic lab.png
+Grass land,Park,0,1,0,0,0,0,1,0,1,0,0,1x1,,Taxi Cab rank,House,grass land.png
+Grocers,Mixed use,Commercial,0,2,1,-1,1,0,0,0,3,2,4x3,,"All other mixed use buildings, when both are zoned as mixed use",0,grocers.png
+Hairdressers,Mixed use,Commercial,0,1,0,0,0,0,0,0,1,2,2x2,,"All other mixed use buildings, when both are zoned as mixed use",0,hair salon.png
+Home Improvement Store,Industrial,Commercial,0,0,0,0,1,2,0,1,2,2,8x6,,Petting Zoo,Warehouse,home improvement store.png
+House,Residential,0,0,0,0,0,0,0,0,0,0,3,3x4,,Vet,Security Office,house 3x4.png
+House (large),Residential,0,0,0,0,0,0,0,0,0,0,3,4x4,,Vet,Security Office,house 4x4.png
+Library,Commercial,0,-1,1,0,3,0,-2,1,1,-1,1,6x6,,Subway Entrance,Home Improvement Store,library.png
+Maker Space,Mixed use,Commercial,1,0,0,2,0,0,1,0,0,2,4x3,,"All other mixed use buildings, when both are zoned as mixed use",0,maker space.png
+Mechanic,Industrial,0,0,-1,2,0,1,1,1,0,2,0,5x3,,Bus Exchange,Water Treatment Plant,mechanic.png
+Medical Centre,Commercial,0,0,3,1,0,0,0,0,0,2,2,8x4,,Home Improvement Store,Playground,doctors office.png
+Mounted Police Unit (Stables),Park,0,0,0,-1,0,2,0,0,2,0,0,5x3,,Medical Centre,Donut Stand,mounted police unit.png
+Museum,Commercial,0,2,0,1,3,0,0,1,0,0,1,6x4,,Street Gym,Beehives,museum.png
+Native Plant Reserve,Conservation,0,3,0,0,0,0,-1,0,2,0,1,3x2,,Beehives,Carpark,native plant reserve.png
+Newsagency,Mixed use,Commercial,0,0,0,0,0,0,1,0,2,1,2x2,,"All other mixed use buildings, when both are zoned as mixed use",0,newagency.png
+Newspaper Stand,Any,0,0,0,0,1,0,0,1,0,1,1,1x1,,House,Bus Stop,newspaper stand.png
+Petting Zoo,Commercial,0,2,-1,0,0,0,0,1,3,2,-2,8x3,,Newspaper Stand,Mechanic,petting zoo.png
+Playground,Park,0,3,-1,0,0,0,1,2,0,0,2,3x3,,Firetruck Shelter,Taxi Cab rank,playground.png
+Police Station,Any,0,0,1,0,0,3,-2,0,0,0,-1,6x4,,Grass land,Casino,police station.png
+Pond,Park,0,1,-1,0,0,0,3,0,1,0,1,3x3,,Fire Hydrant,Emergency Operations Centre,pond.png
+Protected Habitat,Conservation,0,3,0,0,0,0,-2,0,3,-1,1,8x3,,Street Library,Street Gym,protected habitat.png
+Radio Station,Commercial,0,0,1,0,0,2,1,0,0,2,0,5x4,,Museum,Library,radio station.png
+Restaurant,Mixed use,Commercial,0,1,0,0,1,-1,0,-1,2,2,4x3,,"All other mixed use buildings, when both are zoned as mixed use",0,restaurant.png
+Rose Garden,Park,0,2,0,0,0,0,0,0,2,0,1,2x2,,Emergency Operations Centre,Native Plant Reserve,rose garden.png
+School,Any,0,0,1,1,1,0,0,3,0,0,1,10x8,,Fire Station,Street Library,school.png
+Security Office,Commercial,0,0,0,0,0,2,0,0,1,2,0,2x2,,Rose Garden,Firetruck Shelter,security office.png
+Short Stay Accomodation for Government Employees,Residential,0,0,2,0,0,2,2,0,0,0,0,4x3,,Protected Habitat,Subway Entrance,short stay accomidation.png
+Sports Courts,Park,Commercial,2,2,0,0,0,1,2,0,-2,1,4x3,,Animal Shelter,Rose Garden,sport court.png
+Street Gym,Park,0,1,2,-1,0,0,1,2,0,-2,1,4x1,,Short Stay Accomodation for Government Employees,Fire Station,street gym.png
+Street Library,Park,0,1,0,0,3,0,0,1,0,-1,1,1x1,,Sub-station,Radio Station,street library.png
+Sub-station,Industrial,0,-1,2,2,1,1,-2,2,-1,3,-2,5x5,,Security Office,Museum,sub-station.png
+Subway Entrance,Any,0,-3,0,3,1,-1,1,1,-3,0,1,2x2,,Police Station,Petting Zoo,subway entrance.png
+Taxi Cab rank,Any,0,1,0,2,1,0,0,0,0,0,1,2x1,,Native Plant Reserve,Police Station,taxi cab rank.png
+Training Centre,Commercial,0,0,1,0,1,2,2,0,0,0,-1,6x4,,Donut Stand,Forensic Lab,training centre.png
+Vet,Commercial,0,0,2,0,0,0,0,0,2,1,1,4x3,,Radio Station,Training Centre,vet.png
+Warehouse,Industrial,0,0,0,0,0,0,0,0,0,1,-3,8x4,,Training Centre,School,warehouse.png
+Water Treatment Plant,Industrial,0,-2,2,1,0,0,2,0,0,1,1,8x8,,Warehouse,Bus Exchange,water treatment plant.png
