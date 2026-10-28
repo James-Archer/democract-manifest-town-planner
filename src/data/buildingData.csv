@@ -26,7 +26,7 @@ House (large),Residential,0,0,0,0,0,0,0,0,0,0,3,4x4,,Vet,Security Office,house 4
 Library,Commercial,0,-1,1,0,3,0,-2,1,1,-1,1,6x6,,Subway Entrance,Home Improvement Store,library.png
 Maker Space,Mixed use,Commercial,1,0,0,2,0,0,1,0,0,2,4x3,,"All other mixed use buildings, when both are zoned as mixed use",0,maker space.png
 Mechanic,Industrial,0,0,-1,2,0,1,1,1,0,2,0,5x3,,Bus Exchange,Water Treatment Plant,mechanic.png
-Medical Centre,Commercial,0,0,3,1,0,0,0,0,0,2,2,8x4,,Home Improvement Store,Playground,doctors office.png
+Medical Centre,Commercial,0,0,3,1,0,0,0,0,0,2,2,8x4,,Home Improvement Store,Playground,medical centre.png
 Mounted Police Unit (Stables),Park,0,0,0,-1,0,2,0,0,2,0,0,5x3,,Medical Centre,Donut Stand,mounted police unit.png
 Museum,Commercial,0,2,0,1,3,0,0,1,0,0,1,6x4,,Street Gym,Beehives,museum.png
 Native Plant Reserve,Conservation,0,3,0,0,0,0,-1,0,2,0,1,3x2,,Beehives,Carpark,native plant reserve.png
