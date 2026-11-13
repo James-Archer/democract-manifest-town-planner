@@ -2,6 +2,7 @@
   import { onMount } from 'svelte'
 
   import csvText from './data/buildingData.csv?raw'
+  import startingLayout from './data/starting-layout.json'
   import {
     DEFAULT_ZONE,
     DEPARTMENTS,
@@ -21,6 +22,15 @@
   const { buildings: parsedBuildings, issues } = parseBuildingsCsv(csvText)
   const rowIndices = Array.from({ length: GRID_ROWS }, (_, index) => index)
   const colIndices = Array.from({ length: GRID_COLS }, (_, index) => index)
+
+  // Spreadsheet-style: A..Z, AA, AB, ...
+  function columnLabel(col) {
+    let label = ''
+    for (let n = col + 1; n > 0; n = Math.floor((n - 1) / 26)) {
+      label = String.fromCharCode(65 + ((n - 1) % 26)) + label
+    }
+    return label
+  }
 
   let zones = [...ZONES]
   let zoneColors = { ...ZONE_COLORS }
@@ -515,6 +525,7 @@
     try {
       const stored = localStorage.getItem(STORAGE_KEY)
       if (!stored) {
+        applySnapshot(startingLayout, 'starting layout')
         return
       }
       const parsed = JSON.parse(stored)
@@ -1363,84 +1374,100 @@
   </aside>
 
   <section class="workspace">
-    <div class="board {placementMode ? 'placing' : ''}" data-grid-root="true">
-      <div class="zoning-grid" on:mouseleave={() => (hoveredCell = null)}>
-        {#each rowIndices as row (row)}
+    <div class="board-frame" style="--grid-cols: {GRID_COLS}; --grid-rows: {GRID_ROWS};">
+      {#each ['top', 'bottom'] as side (side)}
+        <div class="axis-labels axis-cols axis-{side}" aria-hidden="true">
           {#each colIndices as col (col)}
-            {@const previewing = previewCellKeys.has(cellKey(row, col))}
-            {@const rectActive =
-              editorMode === 'zone' && zoningPaintMode === 'rectangle' && !placementMode}
-            {@const isRectStart =
-              rectActive && rectangleStart?.row === row && rectangleStart?.col === col}
-            {@const isRectHover =
-              rectActive && hoveredCell?.row === row && hoveredCell?.col === col}
-            <button
-              type="button"
-              class="cell {previewing
-                ? placementPreview?.ok
-                  ? 'preview-valid'
-                  : 'preview-invalid'
-                : ''} {isRectStart ? 'rect-start' : ''} {isRectHover ? 'rect-hover' : ''}"
-              style={`--zone-color: ${zoneColors[zonesGrid[row][col]] ?? '#e5e7eb'}`}
-              on:mouseenter={() => (hoveredCell = { row, col })}
-              on:focus={() => (hoveredCell = { row, col })}
-              on:click={() => handleCellClick(row, col)}
-              title={`(${row + 1}, ${col + 1}) ${zonesGrid[row][col]}`}
-            />
+            <span>{columnLabel(col)}</span>
           {/each}
-        {/each}
+        </div>
+      {/each}
+      {#each ['left', 'right'] as side (side)}
+        <div class="axis-labels axis-rows axis-{side}" aria-hidden="true">
+          {#each rowIndices as row (row)}
+            <span>{row + 1}</span>
+          {/each}
+        </div>
+      {/each}
+      <div class="board {placementMode ? 'placing' : ''}" data-grid-root="true">
+        <div class="zoning-grid" on:mouseleave={() => (hoveredCell = null)}>
+          {#each rowIndices as row (row)}
+            {#each colIndices as col (col)}
+              {@const previewing = previewCellKeys.has(cellKey(row, col))}
+              {@const rectActive =
+                editorMode === 'zone' && zoningPaintMode === 'rectangle' && !placementMode}
+              {@const isRectStart =
+                rectActive && rectangleStart?.row === row && rectangleStart?.col === col}
+              {@const isRectHover =
+                rectActive && hoveredCell?.row === row && hoveredCell?.col === col}
+              <button
+                type="button"
+                class="cell {previewing
+                  ? placementPreview?.ok
+                    ? 'preview-valid'
+                    : 'preview-invalid'
+                  : ''} {isRectStart ? 'rect-start' : ''} {isRectHover ? 'rect-hover' : ''}"
+                style={`--zone-color: ${zoneColors[zonesGrid[row][col]] ?? '#e5e7eb'}`}
+                on:mouseenter={() => (hoveredCell = { row, col })}
+                on:focus={() => (hoveredCell = { row, col })}
+                on:click={() => handleCellClick(row, col)}
+                title={`${columnLabel(col)}${row + 1} ${zonesGrid[row][col]}`}
+              />
+            {/each}
+          {/each}
+        </div>
+
+        {#if !placementMode}
+          <div class="zone-labels-layer">
+            {#each zoneRegions as region (region.id)}
+              <span
+                class="zone-region-label"
+                style={`grid-column: ${region.labelCol + 1}; grid-row: ${region.labelRow + 1};`}
+              >
+                {region.zone}
+              </span>
+            {/each}
+          </div>
+        {/if}
+
+        {#if showBuildings}
+          <div class="buildings-layer">
+            {#each placements as placement (placement.id)}
+              <article
+                class="placed-building {selectedPlacementId === placement.id ? 'selected' : ''}"
+                tabindex="0"
+                style={`grid-column: ${placement.col + 1} / span ${placement.footprint.width}; grid-row: ${placement.row + 1} / span ${placement.footprint.height}; --building-fill: ${placement.fillColor}; --building-border: ${placement.borderColor}; --building-text: ${placement.textColor};`}
+                on:click|stopPropagation={() => selectPlacement(placement.id)}
+                on:keydown={(event) => {
+                  if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault()
+                    selectPlacement(placement.id)
+                  }
+                }}
+              >
+                {#if placement.imageName}
+                  <img
+                    class="placed-building-image"
+                    src={`${import.meta.env.BASE_URL}images/buildings/${encodeURIComponent(placement.imageName)}`}
+                    alt=""
+                    draggable="false"
+                  />
+                {/if}
+                <div class="placed-building-content">
+                  <span class="placed-building-name">{placement.name}</span>
+                  <button
+                    type="button"
+                    class="remove-building"
+                    on:click|stopPropagation={() => removePlacement(placement.id)}
+                  >
+                    Remove
+                  </button>
+                </div>
+              </article>
+            {/each}
+          </div>
+        {/if}
       </div>
-
-      {#if !placementMode}
-        <div class="zone-labels-layer">
-          {#each zoneRegions as region (region.id)}
-            <span
-              class="zone-region-label"
-              style={`grid-column: ${region.labelCol + 1}; grid-row: ${region.labelRow + 1};`}
-            >
-              {region.zone}
-            </span>
-          {/each}
-        </div>
-      {/if}
-
-      {#if showBuildings}
-        <div class="buildings-layer">
-          {#each placements as placement (placement.id)}
-            <article
-              class="placed-building {selectedPlacementId === placement.id ? 'selected' : ''}"
-              tabindex="0"
-              style={`grid-column: ${placement.col + 1} / span ${placement.footprint.width}; grid-row: ${placement.row + 1} / span ${placement.footprint.height}; --building-fill: ${placement.fillColor}; --building-border: ${placement.borderColor}; --building-text: ${placement.textColor};`}
-              on:click|stopPropagation={() => selectPlacement(placement.id)}
-              on:keydown={(event) => {
-                if (event.key === 'Enter' || event.key === ' ') {
-                  event.preventDefault()
-                  selectPlacement(placement.id)
-                }
-              }}
-            >
-              {#if placement.imageName}
-                <img
-                  class="placed-building-image"
-                  src={`${import.meta.env.BASE_URL}images/buildings/${encodeURIComponent(placement.imageName)}`}
-                  alt=""
-                  draggable="false"
-                />
-              {/if}
-              <div class="placed-building-content">
-                <span class="placed-building-name">{placement.name}</span>
-                <button
-                  type="button"
-                  class="remove-building"
-                  on:click|stopPropagation={() => removePlacement(placement.id)}
-                >
-                  Remove
-                </button>
-              </div>
-            </article>
-          {/each}
-        </div>
-      {/if}
     </div>
   </section>
 </main>

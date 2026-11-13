@@ -1,5 +1,5 @@
-export const GRID_ROWS = 20
-export const GRID_COLS = 20
+export const GRID_ROWS = 21
+export const GRID_COLS = 21
 
 export const DEPARTMENTS = [
   'Parks and Rec',
@@ -29,13 +29,13 @@ export const DEFAULT_ZONE = 'Residential'
 
 export const ZONE_COLORS = {
   Any: '#d1d5db',
-  Residential: '#bfdbfe',
-  'High density residential': '#93c5fd',
-  Commercial: '#fde68a',
-  Industrial: '#fecaca',
-  Park: '#bbf7d0',
-  'Mixed use': '#ddd6fe',
-  Conservation: '#a7f3d0',
+  Residential: '#ff5ca0',
+  'High density residential': '#ee2d4b',
+  Commercial: '#f5e15e',
+  Industrial: '#22a0d0',
+  Park: '#bde34c',
+  'Mixed use': '#ffa258',
+  Conservation: '#36a321',
 }
 
 export const STRUCTURE_RULE_TEXT = 'All other mixed use buildings, when both are zoned as mixed use'

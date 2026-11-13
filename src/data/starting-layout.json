@@ -1,0 +1,3107 @@
+{
+  "version": 1,
+  "csvSignature": "Building,Zone 1,Zone 2,Parks and Rec,Health,Transportation,Library,Police,Fire,Education,Animal Control,Business,Resident,Footprint,Alt Footprint,Positive Structure,Negative Structure,Image Name\r\nAnimal Shelter,Commercial,0,0,0,0,0,-1,0,0,3,0,0,6x4,,Bus Stop,Sports Courts,animal shelter.png\r\nBeehives,Park,0,1,1,0,0,0,0,0,2,0,0,2x2,,Library,Emergency Phone,beehives.png\r\nBus Exchange,Any,0,0,0,3,2,0,0,1,0,0,0,6x1,,Pond,Animal Shelter,bus exchange.png\r\nBus Stop,Any,0,1,0,2,1,0,0,1,0,0,1,2x1,,Mechanic,Newspaper Stand,bus stop.png\r\nCafe,Mixed use,Commercial,1,0,0,2,1,-1,1,-1,2,2,3x2,,\"All other mixed use buildings, when both are zoned as mixed use\",0,cafe.png\r\nCarpark,Any,0,0,0,1,0,0,0,0,0,0,0,2x1,,Mounted Police Unit (Stables),Duck Pond,car park.png\r\nCasino,Commercial,0,0,-3,0,0,-3,0,-3,0,3,0,12x8,,Emergency Phone,Grass land,casino.png\r\nChemist,Mixed use,Commercial,0,2,0,0,0,0,0,0,2,1,3x2,,\"All other mixed use buildings, when both are zoned as mixed use\",0,chemist.png\r\nDoctors Offices,Mixed use,Commercial,0,2,1,0,0,0,0,0,1,1,4x3,,\"All other mixed use buildings, when both are zoned as mixed use\",0,doctors office.png\r\nDonut Stand,Any,0,0,-2,0,0,3,0,0,-1,1,2,2x1,,Casino,Pond,donut stand.png\r\nDuck Pond,Park,0,2,-1,0,0,0,2,0,2,0,0,2x3,,EV Charger,Fire Hydrant,duck pond.png\r\nEmergency Operations Centre,Commercial,0,0,1,-1,0,2,2,0,2,0,-1,4x4,,Carpark,Protected Habitat,emergency operations centre.png\r\nEmergency Phone,Any,0,0,0,0,0,2,2,0,0,0,0,1x1,,Sports Courts,Vet,emergency phone.png\r\nEV Charger,Any,0,0,0,3,0,0,-1,0,0,1,1,1x1,,School,Medical Centre,ev charger.png\r\nFire Hydrant,Any,0,0,0,0,0,-1,2,0,0,0,1,1x1,,Forensic Lab,Short Stay Accomodation for Government Employees,fire hydrant.png\r\nFire Station,Any,0,0,0,0,0,-2,3,1,0,0,-1,6x4,,Playground,Mounted Police Unit (Stables),fire station.png\r\nFiretruck Shelter,Any,0,0,0,0,0,0,3,0,0,0,0,3x3,,Duck Pond,Sub-station,fire truck shelter.png\r\nForensic Lab,Commercial,0,0,1,0,0,3,1,0,0,1,0,5x3,,Water Treatment Plant,EV Charger,state forensic lab.png\r\nGrass land,Park,0,1,0,0,0,0,1,0,1,0,0,1x1,,Taxi Cab rank,House,grass land.png\r\nGrocers,Mixed use,Commercial,0,2,1,-1,1,0,0,0,3,2,4x3,,\"All other mixed use buildings, when both are zoned as mixed use\",0,grocers.png\r\nHairdressers,Mixed use,Commercial,0,1,0,0,0,0,0,0,1,2,2x2,,\"All other mixed use buildings, when both are zoned as mixed use\",0,hair salon.png\r\nHome Improvement Store,Industrial,Commercial,0,0,0,0,1,2,0,1,2,2,8x6,,Petting Zoo,Warehouse,home improvement store.png\r\nHouse,Residential,0,0,0,0,0,0,0,0,0,0,3,3x4,,Vet,Security Office,house 3x4.png\r\nHouse (large),Residential,0,0,0,0,0,0,0,0,0,0,3,4x4,,Vet,Security Office,house 4x4.png\r\nLibrary,Commercial,0,-1,1,0,3,0,-2,1,1,-1,1,6x6,,Subway Entrance,Home Improvement Store,library.png\r\nMaker Space,Mixed use,Commercial,1,0,0,2,0,0,1,0,0,2,4x3,,\"All other mixed use buildings, when both are zoned as mixed use\",0,maker space.png\r\nMechanic,Industrial,0,0,-1,2,0,1,1,1,0,2,0,5x3,,Bus Exchange,Water Treatment Plant,mechanic.png\r\nMedical Centre,Commercial,0,0,3,1,0,0,0,0,0,2,2,8x4,,Home Improvement Store,Playground,medical centre.png\r\nMounted Police Unit (Stables),Park,0,0,0,-1,0,2,0,0,2,0,0,5x3,,Medical Centre,Donut Stand,mounted police unit.png\r\nMuseum,Commercial,0,2,0,1,3,0,0,1,0,0,1,6x4,,Street Gym,Beehives,museum.png\r\nNative Plant Reserve,Conservation,0,3,0,0,0,0,-1,0,2,0,1,3x2,,Beehives,Carpark,native plant reserve.png\r\nNewsagency,Mixed use,Commercial,0,0,0,0,0,0,1,0,2,1,2x2,,\"All other mixed use buildings, when both are zoned as mixed use\",0,newagency.png\r\nNewspaper Stand,Any,0,0,0,0,1,0,0,1,0,1,1,1x1,,House,Bus Stop,newspaper stand.png\r\nPetting Zoo,Commercial,0,2,-1,0,0,0,0,1,3,2,-2,8x3,,Newspaper Stand,Mechanic,petting zoo.png\r\nPlayground,Park,0,3,-1,0,0,0,1,2,0,0,2,3x3,,Firetruck Shelter,Taxi Cab rank,playground.png\r\nPolice Station,Any,0,0,1,0,0,3,-2,0,0,0,-1,6x4,,Grass land,Casino,police station.png\r\nPond,Park,0,1,-1,0,0,0,3,0,1,0,1,3x3,,Fire Hydrant,Emergency Operations Centre,pond.png\r\nProtected Habitat,Conservation,0,3,0,0,0,0,-2,0,3,-1,1,8x3,,Street Library,Street Gym,protected habitat.png\r\nRadio Station,Commercial,0,0,1,0,0,2,1,0,0,2,0,5x4,,Museum,Library,radio station.png\r\nRestaurant,Mixed use,Commercial,0,1,0,0,1,-1,0,-1,2,2,4x3,,\"All other mixed use buildings, when both are zoned as mixed use\",0,restaurant.png\r\nRose Garden,Park,0,2,0,0,0,0,0,0,2,0,1,2x2,,Emergency Operations Centre,Native Plant Reserve,rose garden.png\r\nSchool,Any,0,0,1,1,1,0,0,3,0,0,1,10x8,,Fire Station,Street Library,school.png\r\nSecurity Office,Commercial,0,0,0,0,0,2,0,0,1,2,0,2x2,,Rose Garden,Firetruck Shelter,security office.png\r\nShort Stay Accomodation for Government Employees,Residential,0,0,2,0,0,2,2,0,0,0,0,4x3,,Protected Habitat,Subway Entrance,short stay accomidation.png\r\nSports Courts,Park,Commercial,2,2,0,0,0,1,2,0,-2,1,4x3,,Animal Shelter,Rose Garden,sport court.png\r\nStreet Gym,Park,0,1,2,-1,0,0,1,2,0,-2,1,4x1,,Short Stay Accomodation for Government Employees,Fire Station,street gym.png\r\nStreet Library,Park,0,1,0,0,3,0,0,1,0,-1,1,1x1,,Sub-station,Radio Station,street library.png\r\nSub-station,Industrial,0,-1,2,2,1,1,-2,2,-1,3,-2,5x5,,Security Office,Museum,sub-station.png\r\nSubway Entrance,Any,0,-3,0,3,1,-1,1,1,-3,0,1,2x2,,Police Station,Petting Zoo,subway entrance.png\r\nTaxi Cab rank,Any,0,1,0,2,1,0,0,0,0,0,1,2x1,,Native Plant Reserve,Police Station,taxi cab rank.png\r\nTraining Centre,Commercial,0,0,1,0,1,2,2,0,0,0,-1,6x4,,Donut Stand,Forensic Lab,training centre.png\r\nVet,Commercial,0,0,2,0,0,0,0,0,2,1,1,4x3,,Radio Station,Training Centre,vet.png\r\nWarehouse,Industrial,0,0,0,0,0,0,0,0,0,1,-3,8x4,,Training Centre,School,warehouse.png\r\nWater Treatment Plant,Industrial,0,-2,2,1,0,0,2,0,0,1,1,8x8,,Warehouse,Bus Exchange,water treatment plant.png\r\n",
+  "zones": [
+    "Any",
+    "Residential",
+    "High density residential",
+    "Commercial",
+    "Industrial",
+    "Park",
+    "Mixed use",
+    "Conservation"
+  ],
+  "zoneColors": {
+    "Any": "#d1d5db",
+    "Residential": "#ff5ca0",
+    "High density residential": "#ee2d4b",
+    "Commercial": "#f5e15e",
+    "Industrial": "#22a0d0",
+    "Park": "#bde34c",
+    "Mixed use": "#ffa258",
+    "Conservation": "#36a321"
+  },
+  "buildingsCatalog": [
+    {
+      "name": "Animal Shelter",
+      "allowedZones": ["Commercial"],
+      "footprints": [
+        {
+          "width": 6,
+          "height": 4,
+          "label": "6x4"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": -1,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 3,
+        "Business": 0,
+        "Resident": 0
+      },
+      "positiveStructure": "Bus Stop",
+      "negativeStructure": "Sports Courts",
+      "imageName": "animal shelter.png"
+    },
+    {
+      "name": "Beehives",
+      "allowedZones": ["Park"],
+      "footprints": [
+        {
+          "width": 2,
+          "height": 2,
+          "label": "2x2"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 1,
+        "Health": 1,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 2,
+        "Business": 0,
+        "Resident": 0
+      },
+      "positiveStructure": "Library",
+      "negativeStructure": "Emergency Phone",
+      "imageName": "beehives.png"
+    },
+    {
+      "name": "Bus Exchange",
+      "allowedZones": ["Any"],
+      "footprints": [
+        {
+          "width": 6,
+          "height": 1,
+          "label": "6x1"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 3,
+        "Library": 2,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 1,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 0
+      },
+      "positiveStructure": "Pond",
+      "negativeStructure": "Animal Shelter",
+      "imageName": "bus exchange.png"
+    },
+    {
+      "name": "Bus Stop",
+      "allowedZones": ["Any"],
+      "footprints": [
+        {
+          "width": 2,
+          "height": 1,
+          "label": "2x1"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 1,
+        "Health": 0,
+        "Transportation": 2,
+        "Library": 1,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 1,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 1
+      },
+      "positiveStructure": "Mechanic",
+      "negativeStructure": "Newspaper Stand",
+      "imageName": "bus stop.png"
+    },
+    {
+      "name": "Cafe",
+      "allowedZones": ["Mixed use", "Commercial"],
+      "footprints": [
+        {
+          "width": 3,
+          "height": 2,
+          "label": "3x2"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 1,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 2,
+        "Police": 1,
+        "Fire": -1,
+        "Education": 1,
+        "Animal Control": -1,
+        "Business": 2,
+        "Resident": 2
+      },
+      "positiveStructure": "All other mixed use buildings, when both are zoned as mixed use",
+      "negativeStructure": null,
+      "imageName": "cafe.png"
+    },
+    {
+      "name": "Carpark",
+      "allowedZones": ["Any"],
+      "footprints": [
+        {
+          "width": 2,
+          "height": 1,
+          "label": "2x1"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 1,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 0
+      },
+      "positiveStructure": "Mounted Police Unit (Stables)",
+      "negativeStructure": "Duck Pond",
+      "imageName": "car park.png"
+    },
+    {
+      "name": "Casino",
+      "allowedZones": ["Commercial"],
+      "footprints": [
+        {
+          "width": 12,
+          "height": 8,
+          "label": "12x8"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": -3,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": -3,
+        "Fire": 0,
+        "Education": -3,
+        "Animal Control": 0,
+        "Business": 3,
+        "Resident": 0
+      },
+      "positiveStructure": "Emergency Phone",
+      "negativeStructure": "Grass land",
+      "imageName": "casino.png"
+    },
+    {
+      "name": "Chemist",
+      "allowedZones": ["Mixed use", "Commercial"],
+      "footprints": [
+        {
+          "width": 3,
+          "height": 2,
+          "label": "3x2"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 2,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 2,
+        "Resident": 1
+      },
+      "positiveStructure": "All other mixed use buildings, when both are zoned as mixed use",
+      "negativeStructure": null,
+      "imageName": "chemist.png"
+    },
+    {
+      "name": "Doctors Offices",
+      "allowedZones": ["Mixed use", "Commercial"],
+      "footprints": [
+        {
+          "width": 4,
+          "height": 3,
+          "label": "4x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 2,
+        "Transportation": 1,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 1,
+        "Resident": 1
+      },
+      "positiveStructure": "All other mixed use buildings, when both are zoned as mixed use",
+      "negativeStructure": null,
+      "imageName": "doctors office.png"
+    },
+    {
+      "name": "Donut Stand",
+      "allowedZones": ["Any"],
+      "footprints": [
+        {
+          "width": 2,
+          "height": 1,
+          "label": "2x1"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": -2,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 3,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": -1,
+        "Business": 1,
+        "Resident": 2
+      },
+      "positiveStructure": "Casino",
+      "negativeStructure": "Pond",
+      "imageName": "donut stand.png"
+    },
+    {
+      "name": "Duck Pond",
+      "allowedZones": ["Park"],
+      "footprints": [
+        {
+          "width": 2,
+          "height": 3,
+          "label": "2x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 2,
+        "Health": -1,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 2,
+        "Education": 0,
+        "Animal Control": 2,
+        "Business": 0,
+        "Resident": 0
+      },
+      "positiveStructure": "EV Charger",
+      "negativeStructure": "Fire Hydrant",
+      "imageName": "duck pond.png"
+    },
+    {
+      "name": "Emergency Operations Centre",
+      "allowedZones": ["Commercial"],
+      "footprints": [
+        {
+          "width": 4,
+          "height": 4,
+          "label": "4x4"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 1,
+        "Transportation": -1,
+        "Library": 0,
+        "Police": 2,
+        "Fire": 2,
+        "Education": 0,
+        "Animal Control": 2,
+        "Business": 0,
+        "Resident": -1
+      },
+      "positiveStructure": "Carpark",
+      "negativeStructure": "Protected Habitat",
+      "imageName": "emergency operations centre.png"
+    },
+    {
+      "name": "Emergency Phone",
+      "allowedZones": ["Any"],
+      "footprints": [
+        {
+          "width": 1,
+          "height": 1,
+          "label": "1x1"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 2,
+        "Fire": 2,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 0
+      },
+      "positiveStructure": "Sports Courts",
+      "negativeStructure": "Vet",
+      "imageName": "emergency phone.png"
+    },
+    {
+      "name": "EV Charger",
+      "allowedZones": ["Any"],
+      "footprints": [
+        {
+          "width": 1,
+          "height": 1,
+          "label": "1x1"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 3,
+        "Library": 0,
+        "Police": 0,
+        "Fire": -1,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 1,
+        "Resident": 1
+      },
+      "positiveStructure": "School",
+      "negativeStructure": "Medical Centre",
+      "imageName": "ev charger.png"
+    },
+    {
+      "name": "Fire Hydrant",
+      "allowedZones": ["Any"],
+      "footprints": [
+        {
+          "width": 1,
+          "height": 1,
+          "label": "1x1"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": -1,
+        "Fire": 2,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 1
+      },
+      "positiveStructure": "Forensic Lab",
+      "negativeStructure": "Short Stay Accomodation for Government Employees",
+      "imageName": "fire hydrant.png"
+    },
+    {
+      "name": "Fire Station",
+      "allowedZones": ["Any"],
+      "footprints": [
+        {
+          "width": 6,
+          "height": 4,
+          "label": "6x4"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": -2,
+        "Fire": 3,
+        "Education": 1,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": -1
+      },
+      "positiveStructure": "Playground",
+      "negativeStructure": "Mounted Police Unit (Stables)",
+      "imageName": "fire station.png"
+    },
+    {
+      "name": "Firetruck Shelter",
+      "allowedZones": ["Any"],
+      "footprints": [
+        {
+          "width": 3,
+          "height": 3,
+          "label": "3x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 3,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 0
+      },
+      "positiveStructure": "Duck Pond",
+      "negativeStructure": "Sub-station",
+      "imageName": "fire truck shelter.png"
+    },
+    {
+      "name": "Forensic Lab",
+      "allowedZones": ["Commercial"],
+      "footprints": [
+        {
+          "width": 5,
+          "height": 3,
+          "label": "5x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 1,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 3,
+        "Fire": 1,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 1,
+        "Resident": 0
+      },
+      "positiveStructure": "Water Treatment Plant",
+      "negativeStructure": "EV Charger",
+      "imageName": "state forensic lab.png"
+    },
+    {
+      "name": "Grass land",
+      "allowedZones": ["Park"],
+      "footprints": [
+        {
+          "width": 1,
+          "height": 1,
+          "label": "1x1"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 1,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 1,
+        "Education": 0,
+        "Animal Control": 1,
+        "Business": 0,
+        "Resident": 0
+      },
+      "positiveStructure": "Taxi Cab rank",
+      "negativeStructure": "House",
+      "imageName": "grass land.png"
+    },
+    {
+      "name": "Grocers",
+      "allowedZones": ["Mixed use", "Commercial"],
+      "footprints": [
+        {
+          "width": 4,
+          "height": 3,
+          "label": "4x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 2,
+        "Transportation": 1,
+        "Library": -1,
+        "Police": 1,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 3,
+        "Resident": 2
+      },
+      "positiveStructure": "All other mixed use buildings, when both are zoned as mixed use",
+      "negativeStructure": null,
+      "imageName": "grocers.png"
+    },
+    {
+      "name": "Hairdressers",
+      "allowedZones": ["Mixed use", "Commercial"],
+      "footprints": [
+        {
+          "width": 2,
+          "height": 2,
+          "label": "2x2"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 1,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 1,
+        "Resident": 2
+      },
+      "positiveStructure": "All other mixed use buildings, when both are zoned as mixed use",
+      "negativeStructure": null,
+      "imageName": "hair salon.png"
+    },
+    {
+      "name": "Home Improvement Store",
+      "allowedZones": ["Industrial", "Commercial"],
+      "footprints": [
+        {
+          "width": 8,
+          "height": 6,
+          "label": "8x6"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 1,
+        "Fire": 2,
+        "Education": 0,
+        "Animal Control": 1,
+        "Business": 2,
+        "Resident": 2
+      },
+      "positiveStructure": "Petting Zoo",
+      "negativeStructure": "Warehouse",
+      "imageName": "home improvement store.png"
+    },
+    {
+      "name": "House",
+      "allowedZones": ["Residential"],
+      "footprints": [
+        {
+          "width": 3,
+          "height": 4,
+          "label": "3x4"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 3
+      },
+      "positiveStructure": "Vet",
+      "negativeStructure": "Security Office",
+      "imageName": "house 3x4.png"
+    },
+    {
+      "name": "House (large)",
+      "allowedZones": ["Residential"],
+      "footprints": [
+        {
+          "width": 4,
+          "height": 4,
+          "label": "4x4"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 3
+      },
+      "positiveStructure": "Vet",
+      "negativeStructure": "Security Office",
+      "imageName": "house 4x4.png"
+    },
+    {
+      "name": "Library",
+      "allowedZones": ["Commercial"],
+      "footprints": [
+        {
+          "width": 6,
+          "height": 6,
+          "label": "6x6"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": -1,
+        "Health": 1,
+        "Transportation": 0,
+        "Library": 3,
+        "Police": 0,
+        "Fire": -2,
+        "Education": 1,
+        "Animal Control": 1,
+        "Business": -1,
+        "Resident": 1
+      },
+      "positiveStructure": "Subway Entrance",
+      "negativeStructure": "Home Improvement Store",
+      "imageName": "library.png"
+    },
+    {
+      "name": "Maker Space",
+      "allowedZones": ["Mixed use", "Commercial"],
+      "footprints": [
+        {
+          "width": 4,
+          "height": 3,
+          "label": "4x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 1,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 2,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 1,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 2
+      },
+      "positiveStructure": "All other mixed use buildings, when both are zoned as mixed use",
+      "negativeStructure": null,
+      "imageName": "maker space.png"
+    },
+    {
+      "name": "Mechanic",
+      "allowedZones": ["Industrial"],
+      "footprints": [
+        {
+          "width": 5,
+          "height": 3,
+          "label": "5x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": -1,
+        "Transportation": 2,
+        "Library": 0,
+        "Police": 1,
+        "Fire": 1,
+        "Education": 1,
+        "Animal Control": 0,
+        "Business": 2,
+        "Resident": 0
+      },
+      "positiveStructure": "Bus Exchange",
+      "negativeStructure": "Water Treatment Plant",
+      "imageName": "mechanic.png"
+    },
+    {
+      "name": "Medical Centre",
+      "allowedZones": ["Commercial"],
+      "footprints": [
+        {
+          "width": 8,
+          "height": 4,
+          "label": "8x4"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 3,
+        "Transportation": 1,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 2,
+        "Resident": 2
+      },
+      "positiveStructure": "Home Improvement Store",
+      "negativeStructure": "Playground",
+      "imageName": "medical centre.png"
+    },
+    {
+      "name": "Mounted Police Unit (Stables)",
+      "allowedZones": ["Park"],
+      "footprints": [
+        {
+          "width": 5,
+          "height": 3,
+          "label": "5x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": -1,
+        "Library": 0,
+        "Police": 2,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 2,
+        "Business": 0,
+        "Resident": 0
+      },
+      "positiveStructure": "Medical Centre",
+      "negativeStructure": "Donut Stand",
+      "imageName": "mounted police unit.png"
+    },
+    {
+      "name": "Museum",
+      "allowedZones": ["Commercial"],
+      "footprints": [
+        {
+          "width": 6,
+          "height": 4,
+          "label": "6x4"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 2,
+        "Health": 0,
+        "Transportation": 1,
+        "Library": 3,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 1,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 1
+      },
+      "positiveStructure": "Street Gym",
+      "negativeStructure": "Beehives",
+      "imageName": "museum.png"
+    },
+    {
+      "name": "Native Plant Reserve",
+      "allowedZones": ["Conservation"],
+      "footprints": [
+        {
+          "width": 3,
+          "height": 2,
+          "label": "3x2"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 3,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": -1,
+        "Education": 0,
+        "Animal Control": 2,
+        "Business": 0,
+        "Resident": 1
+      },
+      "positiveStructure": "Beehives",
+      "negativeStructure": "Carpark",
+      "imageName": "native plant reserve.png"
+    },
+    {
+      "name": "Newsagency",
+      "allowedZones": ["Mixed use", "Commercial"],
+      "footprints": [
+        {
+          "width": 2,
+          "height": 2,
+          "label": "2x2"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 1,
+        "Animal Control": 0,
+        "Business": 2,
+        "Resident": 1
+      },
+      "positiveStructure": "All other mixed use buildings, when both are zoned as mixed use",
+      "negativeStructure": null,
+      "imageName": "newagency.png"
+    },
+    {
+      "name": "Newspaper Stand",
+      "allowedZones": ["Any"],
+      "footprints": [
+        {
+          "width": 1,
+          "height": 1,
+          "label": "1x1"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 1,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 1,
+        "Animal Control": 0,
+        "Business": 1,
+        "Resident": 1
+      },
+      "positiveStructure": "House",
+      "negativeStructure": "Bus Stop",
+      "imageName": "newspaper stand.png"
+    },
+    {
+      "name": "Petting Zoo",
+      "allowedZones": ["Commercial"],
+      "footprints": [
+        {
+          "width": 8,
+          "height": 3,
+          "label": "8x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 2,
+        "Health": -1,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 1,
+        "Animal Control": 3,
+        "Business": 2,
+        "Resident": -2
+      },
+      "positiveStructure": "Newspaper Stand",
+      "negativeStructure": "Mechanic",
+      "imageName": "petting zoo.png"
+    },
+    {
+      "name": "Playground",
+      "allowedZones": ["Park"],
+      "footprints": [
+        {
+          "width": 3,
+          "height": 3,
+          "label": "3x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 3,
+        "Health": -1,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 1,
+        "Education": 2,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 2
+      },
+      "positiveStructure": "Firetruck Shelter",
+      "negativeStructure": "Taxi Cab rank",
+      "imageName": "playground.png"
+    },
+    {
+      "name": "Police Station",
+      "allowedZones": ["Any"],
+      "footprints": [
+        {
+          "width": 6,
+          "height": 4,
+          "label": "6x4"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 1,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 3,
+        "Fire": -2,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": -1
+      },
+      "positiveStructure": "Grass land",
+      "negativeStructure": "Casino",
+      "imageName": "police station.png"
+    },
+    {
+      "name": "Pond",
+      "allowedZones": ["Park"],
+      "footprints": [
+        {
+          "width": 3,
+          "height": 3,
+          "label": "3x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 1,
+        "Health": -1,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 3,
+        "Education": 0,
+        "Animal Control": 1,
+        "Business": 0,
+        "Resident": 1
+      },
+      "positiveStructure": "Fire Hydrant",
+      "negativeStructure": "Emergency Operations Centre",
+      "imageName": "pond.png"
+    },
+    {
+      "name": "Protected Habitat",
+      "allowedZones": ["Conservation"],
+      "footprints": [
+        {
+          "width": 8,
+          "height": 3,
+          "label": "8x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 3,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": -2,
+        "Education": 0,
+        "Animal Control": 3,
+        "Business": -1,
+        "Resident": 1
+      },
+      "positiveStructure": "Street Library",
+      "negativeStructure": "Street Gym",
+      "imageName": "protected habitat.png"
+    },
+    {
+      "name": "Radio Station",
+      "allowedZones": ["Commercial"],
+      "footprints": [
+        {
+          "width": 5,
+          "height": 4,
+          "label": "5x4"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 1,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 2,
+        "Fire": 1,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 2,
+        "Resident": 0
+      },
+      "positiveStructure": "Museum",
+      "negativeStructure": "Library",
+      "imageName": "radio station.png"
+    },
+    {
+      "name": "Restaurant",
+      "allowedZones": ["Mixed use", "Commercial"],
+      "footprints": [
+        {
+          "width": 4,
+          "height": 3,
+          "label": "4x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 1,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 1,
+        "Fire": -1,
+        "Education": 0,
+        "Animal Control": -1,
+        "Business": 2,
+        "Resident": 2
+      },
+      "positiveStructure": "All other mixed use buildings, when both are zoned as mixed use",
+      "negativeStructure": null,
+      "imageName": "restaurant.png"
+    },
+    {
+      "name": "Rose Garden",
+      "allowedZones": ["Park"],
+      "footprints": [
+        {
+          "width": 2,
+          "height": 2,
+          "label": "2x2"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 2,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 2,
+        "Business": 0,
+        "Resident": 1
+      },
+      "positiveStructure": "Emergency Operations Centre",
+      "negativeStructure": "Native Plant Reserve",
+      "imageName": "rose garden.png"
+    },
+    {
+      "name": "School",
+      "allowedZones": ["Any"],
+      "footprints": [
+        {
+          "width": 10,
+          "height": 8,
+          "label": "10x8"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 1,
+        "Transportation": 1,
+        "Library": 1,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 3,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 1
+      },
+      "positiveStructure": "Fire Station",
+      "negativeStructure": "Street Library",
+      "imageName": "school.png"
+    },
+    {
+      "name": "Security Office",
+      "allowedZones": ["Commercial"],
+      "footprints": [
+        {
+          "width": 2,
+          "height": 2,
+          "label": "2x2"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 2,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 1,
+        "Business": 2,
+        "Resident": 0
+      },
+      "positiveStructure": "Rose Garden",
+      "negativeStructure": "Firetruck Shelter",
+      "imageName": "security office.png"
+    },
+    {
+      "name": "Short Stay Accomodation for Government Employees",
+      "allowedZones": ["Residential"],
+      "footprints": [
+        {
+          "width": 4,
+          "height": 3,
+          "label": "4x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 2,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 2,
+        "Fire": 2,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 0
+      },
+      "positiveStructure": "Protected Habitat",
+      "negativeStructure": "Subway Entrance",
+      "imageName": "short stay accomidation.png"
+    },
+    {
+      "name": "Sports Courts",
+      "allowedZones": ["Park", "Commercial"],
+      "footprints": [
+        {
+          "width": 4,
+          "height": 3,
+          "label": "4x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 2,
+        "Health": 2,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 1,
+        "Education": 2,
+        "Animal Control": 0,
+        "Business": -2,
+        "Resident": 1
+      },
+      "positiveStructure": "Animal Shelter",
+      "negativeStructure": "Rose Garden",
+      "imageName": "sport court.png"
+    },
+    {
+      "name": "Street Gym",
+      "allowedZones": ["Park"],
+      "footprints": [
+        {
+          "width": 4,
+          "height": 1,
+          "label": "4x1"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 1,
+        "Health": 2,
+        "Transportation": -1,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 1,
+        "Education": 2,
+        "Animal Control": 0,
+        "Business": -2,
+        "Resident": 1
+      },
+      "positiveStructure": "Short Stay Accomodation for Government Employees",
+      "negativeStructure": "Fire Station",
+      "imageName": "street gym.png"
+    },
+    {
+      "name": "Street Library",
+      "allowedZones": ["Park"],
+      "footprints": [
+        {
+          "width": 1,
+          "height": 1,
+          "label": "1x1"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 1,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 3,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 1,
+        "Animal Control": 0,
+        "Business": -1,
+        "Resident": 1
+      },
+      "positiveStructure": "Sub-station",
+      "negativeStructure": "Radio Station",
+      "imageName": "street library.png"
+    },
+    {
+      "name": "Sub-station",
+      "allowedZones": ["Industrial"],
+      "footprints": [
+        {
+          "width": 5,
+          "height": 5,
+          "label": "5x5"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": -1,
+        "Health": 2,
+        "Transportation": 2,
+        "Library": 1,
+        "Police": 1,
+        "Fire": -2,
+        "Education": 2,
+        "Animal Control": -1,
+        "Business": 3,
+        "Resident": -2
+      },
+      "positiveStructure": "Security Office",
+      "negativeStructure": "Museum",
+      "imageName": "sub-station.png"
+    },
+    {
+      "name": "Subway Entrance",
+      "allowedZones": ["Any"],
+      "footprints": [
+        {
+          "width": 2,
+          "height": 2,
+          "label": "2x2"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": -3,
+        "Health": 0,
+        "Transportation": 3,
+        "Library": 1,
+        "Police": -1,
+        "Fire": 1,
+        "Education": 1,
+        "Animal Control": -3,
+        "Business": 0,
+        "Resident": 1
+      },
+      "positiveStructure": "Police Station",
+      "negativeStructure": "Petting Zoo",
+      "imageName": "subway entrance.png"
+    },
+    {
+      "name": "Taxi Cab rank",
+      "allowedZones": ["Any"],
+      "footprints": [
+        {
+          "width": 2,
+          "height": 1,
+          "label": "2x1"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 1,
+        "Health": 0,
+        "Transportation": 2,
+        "Library": 1,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 1
+      },
+      "positiveStructure": "Native Plant Reserve",
+      "negativeStructure": "Police Station",
+      "imageName": "taxi cab rank.png"
+    },
+    {
+      "name": "Training Centre",
+      "allowedZones": ["Commercial"],
+      "footprints": [
+        {
+          "width": 6,
+          "height": 4,
+          "label": "6x4"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 1,
+        "Transportation": 0,
+        "Library": 1,
+        "Police": 2,
+        "Fire": 2,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": -1
+      },
+      "positiveStructure": "Donut Stand",
+      "negativeStructure": "Forensic Lab",
+      "imageName": "training centre.png"
+    },
+    {
+      "name": "Vet",
+      "allowedZones": ["Commercial"],
+      "footprints": [
+        {
+          "width": 4,
+          "height": 3,
+          "label": "4x3"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 2,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 2,
+        "Business": 1,
+        "Resident": 1
+      },
+      "positiveStructure": "Radio Station",
+      "negativeStructure": "Training Centre",
+      "imageName": "vet.png"
+    },
+    {
+      "name": "Warehouse",
+      "allowedZones": ["Industrial"],
+      "footprints": [
+        {
+          "width": 8,
+          "height": 4,
+          "label": "8x4"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 1,
+        "Resident": -3
+      },
+      "positiveStructure": "Training Centre",
+      "negativeStructure": "School",
+      "imageName": "warehouse.png"
+    },
+    {
+      "name": "Water Treatment Plant",
+      "allowedZones": ["Industrial"],
+      "footprints": [
+        {
+          "width": 8,
+          "height": 8,
+          "label": "8x8"
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": -2,
+        "Health": 2,
+        "Transportation": 1,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 2,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 1,
+        "Resident": 1
+      },
+      "positiveStructure": "Warehouse",
+      "negativeStructure": "Bus Exchange",
+      "imageName": "water treatment plant.png"
+    }
+  ],
+  "zonesGrid": [
+    [
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Park",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential"
+    ],
+    [
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Park",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential"
+    ],
+    [
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Park",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential"
+    ],
+    [
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Park",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential"
+    ],
+    [
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park"
+    ],
+    [
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park"
+    ],
+    [
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park"
+    ],
+    [
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park"
+    ],
+    [
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park"
+    ],
+    [
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park"
+    ],
+    [
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park"
+    ],
+    [
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park"
+    ],
+    [
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park",
+      "Park"
+    ],
+    [
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial"
+    ],
+    [
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial"
+    ],
+    [
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial"
+    ],
+    [
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "High density residential",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial",
+      "Industrial"
+    ],
+    [
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential"
+    ],
+    [
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential"
+    ],
+    [
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential"
+    ],
+    [
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential",
+      "Residential"
+    ]
+  ],
+  "placements": [
+    {
+      "id": 1,
+      "name": "House",
+      "row": 0,
+      "col": 14,
+      "footprint": {
+        "width": 3,
+        "height": 4,
+        "label": "3x4"
+      },
+      "occupiedCells": [
+        {
+          "row": 0,
+          "col": 14
+        },
+        {
+          "row": 0,
+          "col": 15
+        },
+        {
+          "row": 0,
+          "col": 16
+        },
+        {
+          "row": 1,
+          "col": 14
+        },
+        {
+          "row": 1,
+          "col": 15
+        },
+        {
+          "row": 1,
+          "col": 16
+        },
+        {
+          "row": 2,
+          "col": 14
+        },
+        {
+          "row": 2,
+          "col": 15
+        },
+        {
+          "row": 2,
+          "col": 16
+        },
+        {
+          "row": 3,
+          "col": 14
+        },
+        {
+          "row": 3,
+          "col": 15
+        },
+        {
+          "row": 3,
+          "col": 16
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 3
+      },
+      "positiveStructure": "Vet",
+      "negativeStructure": "Security Office",
+      "imageName": "house 3x4.png",
+      "fillColor": "hsl(213deg 71% 52%)",
+      "borderColor": "hsl(213deg 57% 30%)",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 2,
+      "name": "House",
+      "row": 0,
+      "col": 10,
+      "footprint": {
+        "width": 3,
+        "height": 4,
+        "label": "3x4"
+      },
+      "occupiedCells": [
+        {
+          "row": 0,
+          "col": 10
+        },
+        {
+          "row": 0,
+          "col": 11
+        },
+        {
+          "row": 0,
+          "col": 12
+        },
+        {
+          "row": 1,
+          "col": 10
+        },
+        {
+          "row": 1,
+          "col": 11
+        },
+        {
+          "row": 1,
+          "col": 12
+        },
+        {
+          "row": 2,
+          "col": 10
+        },
+        {
+          "row": 2,
+          "col": 11
+        },
+        {
+          "row": 2,
+          "col": 12
+        },
+        {
+          "row": 3,
+          "col": 10
+        },
+        {
+          "row": 3,
+          "col": 11
+        },
+        {
+          "row": 3,
+          "col": 12
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 3
+      },
+      "positiveStructure": "Vet",
+      "negativeStructure": "Security Office",
+      "imageName": "house 3x4.png",
+      "fillColor": "hsl(213deg 71% 52%)",
+      "borderColor": "hsl(213deg 57% 30%)",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 3,
+      "name": "House",
+      "row": 0,
+      "col": 7,
+      "footprint": {
+        "width": 3,
+        "height": 4,
+        "label": "3x4"
+      },
+      "occupiedCells": [
+        {
+          "row": 0,
+          "col": 7
+        },
+        {
+          "row": 0,
+          "col": 8
+        },
+        {
+          "row": 0,
+          "col": 9
+        },
+        {
+          "row": 1,
+          "col": 7
+        },
+        {
+          "row": 1,
+          "col": 8
+        },
+        {
+          "row": 1,
+          "col": 9
+        },
+        {
+          "row": 2,
+          "col": 7
+        },
+        {
+          "row": 2,
+          "col": 8
+        },
+        {
+          "row": 2,
+          "col": 9
+        },
+        {
+          "row": 3,
+          "col": 7
+        },
+        {
+          "row": 3,
+          "col": 8
+        },
+        {
+          "row": 3,
+          "col": 9
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 3
+      },
+      "positiveStructure": "Vet",
+      "negativeStructure": "Security Office",
+      "imageName": "house 3x4.png",
+      "fillColor": "hsl(213deg 71% 52%)",
+      "borderColor": "hsl(213deg 57% 30%)",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 4,
+      "name": "House",
+      "row": 0,
+      "col": 4,
+      "footprint": {
+        "width": 3,
+        "height": 4,
+        "label": "3x4"
+      },
+      "occupiedCells": [
+        {
+          "row": 0,
+          "col": 4
+        },
+        {
+          "row": 0,
+          "col": 5
+        },
+        {
+          "row": 0,
+          "col": 6
+        },
+        {
+          "row": 1,
+          "col": 4
+        },
+        {
+          "row": 1,
+          "col": 5
+        },
+        {
+          "row": 1,
+          "col": 6
+        },
+        {
+          "row": 2,
+          "col": 4
+        },
+        {
+          "row": 2,
+          "col": 5
+        },
+        {
+          "row": 2,
+          "col": 6
+        },
+        {
+          "row": 3,
+          "col": 4
+        },
+        {
+          "row": 3,
+          "col": 5
+        },
+        {
+          "row": 3,
+          "col": 6
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 3
+      },
+      "positiveStructure": "Vet",
+      "negativeStructure": "Security Office",
+      "imageName": "house 3x4.png",
+      "fillColor": "hsl(213deg 71% 52%)",
+      "borderColor": "hsl(213deg 57% 30%)",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 5,
+      "name": "House (large)",
+      "row": 0,
+      "col": 0,
+      "footprint": {
+        "width": 4,
+        "height": 4,
+        "label": "4x4"
+      },
+      "occupiedCells": [
+        {
+          "row": 0,
+          "col": 0
+        },
+        {
+          "row": 0,
+          "col": 1
+        },
+        {
+          "row": 0,
+          "col": 2
+        },
+        {
+          "row": 0,
+          "col": 3
+        },
+        {
+          "row": 1,
+          "col": 0
+        },
+        {
+          "row": 1,
+          "col": 1
+        },
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 1,
+          "col": 3
+        },
+        {
+          "row": 2,
+          "col": 0
+        },
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 3
+        },
+        {
+          "row": 3,
+          "col": 0
+        },
+        {
+          "row": 3,
+          "col": 1
+        },
+        {
+          "row": 3,
+          "col": 2
+        },
+        {
+          "row": 3,
+          "col": 3
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 3
+      },
+      "positiveStructure": "Vet",
+      "negativeStructure": "Security Office",
+      "imageName": "house 4x4.png",
+      "fillColor": "hsl(215deg 66% 46%)",
+      "borderColor": "hsl(215deg 52% 25%)",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 6,
+      "name": "House (large)",
+      "row": 0,
+      "col": 17,
+      "footprint": {
+        "width": 4,
+        "height": 4,
+        "label": "4x4"
+      },
+      "occupiedCells": [
+        {
+          "row": 0,
+          "col": 17
+        },
+        {
+          "row": 0,
+          "col": 18
+        },
+        {
+          "row": 0,
+          "col": 19
+        },
+        {
+          "row": 0,
+          "col": 20
+        },
+        {
+          "row": 1,
+          "col": 17
+        },
+        {
+          "row": 1,
+          "col": 18
+        },
+        {
+          "row": 1,
+          "col": 19
+        },
+        {
+          "row": 1,
+          "col": 20
+        },
+        {
+          "row": 2,
+          "col": 17
+        },
+        {
+          "row": 2,
+          "col": 18
+        },
+        {
+          "row": 2,
+          "col": 19
+        },
+        {
+          "row": 2,
+          "col": 20
+        },
+        {
+          "row": 3,
+          "col": 17
+        },
+        {
+          "row": 3,
+          "col": 18
+        },
+        {
+          "row": 3,
+          "col": 19
+        },
+        {
+          "row": 3,
+          "col": 20
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 3
+      },
+      "positiveStructure": "Vet",
+      "negativeStructure": "Security Office",
+      "imageName": "house 4x4.png",
+      "fillColor": "hsl(215deg 66% 46%)",
+      "borderColor": "hsl(215deg 52% 25%)",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 7,
+      "name": "House (large)",
+      "row": 17,
+      "col": 0,
+      "footprint": {
+        "width": 4,
+        "height": 4,
+        "label": "4x4"
+      },
+      "occupiedCells": [
+        {
+          "row": 17,
+          "col": 0
+        },
+        {
+          "row": 17,
+          "col": 1
+        },
+        {
+          "row": 17,
+          "col": 2
+        },
+        {
+          "row": 17,
+          "col": 3
+        },
+        {
+          "row": 18,
+          "col": 0
+        },
+        {
+          "row": 18,
+          "col": 1
+        },
+        {
+          "row": 18,
+          "col": 2
+        },
+        {
+          "row": 18,
+          "col": 3
+        },
+        {
+          "row": 19,
+          "col": 0
+        },
+        {
+          "row": 19,
+          "col": 1
+        },
+        {
+          "row": 19,
+          "col": 2
+        },
+        {
+          "row": 19,
+          "col": 3
+        },
+        {
+          "row": 20,
+          "col": 0
+        },
+        {
+          "row": 20,
+          "col": 1
+        },
+        {
+          "row": 20,
+          "col": 2
+        },
+        {
+          "row": 20,
+          "col": 3
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 3
+      },
+      "positiveStructure": "Vet",
+      "negativeStructure": "Security Office",
+      "imageName": "house 4x4.png",
+      "fillColor": "hsl(215deg 66% 46%)",
+      "borderColor": "hsl(215deg 52% 25%)",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 8,
+      "name": "House (large)",
+      "row": 17,
+      "col": 17,
+      "footprint": {
+        "width": 4,
+        "height": 4,
+        "label": "4x4"
+      },
+      "occupiedCells": [
+        {
+          "row": 17,
+          "col": 17
+        },
+        {
+          "row": 17,
+          "col": 18
+        },
+        {
+          "row": 17,
+          "col": 19
+        },
+        {
+          "row": 17,
+          "col": 20
+        },
+        {
+          "row": 18,
+          "col": 17
+        },
+        {
+          "row": 18,
+          "col": 18
+        },
+        {
+          "row": 18,
+          "col": 19
+        },
+        {
+          "row": 18,
+          "col": 20
+        },
+        {
+          "row": 19,
+          "col": 17
+        },
+        {
+          "row": 19,
+          "col": 18
+        },
+        {
+          "row": 19,
+          "col": 19
+        },
+        {
+          "row": 19,
+          "col": 20
+        },
+        {
+          "row": 20,
+          "col": 17
+        },
+        {
+          "row": 20,
+          "col": 18
+        },
+        {
+          "row": 20,
+          "col": 19
+        },
+        {
+          "row": 20,
+          "col": 20
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 3
+      },
+      "positiveStructure": "Vet",
+      "negativeStructure": "Security Office",
+      "imageName": "house 4x4.png",
+      "fillColor": "hsl(215deg 66% 46%)",
+      "borderColor": "hsl(215deg 52% 25%)",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 9,
+      "name": "House (large)",
+      "row": 17,
+      "col": 13,
+      "footprint": {
+        "width": 4,
+        "height": 4,
+        "label": "4x4"
+      },
+      "occupiedCells": [
+        {
+          "row": 17,
+          "col": 13
+        },
+        {
+          "row": 17,
+          "col": 14
+        },
+        {
+          "row": 17,
+          "col": 15
+        },
+        {
+          "row": 17,
+          "col": 16
+        },
+        {
+          "row": 18,
+          "col": 13
+        },
+        {
+          "row": 18,
+          "col": 14
+        },
+        {
+          "row": 18,
+          "col": 15
+        },
+        {
+          "row": 18,
+          "col": 16
+        },
+        {
+          "row": 19,
+          "col": 13
+        },
+        {
+          "row": 19,
+          "col": 14
+        },
+        {
+          "row": 19,
+          "col": 15
+        },
+        {
+          "row": 19,
+          "col": 16
+        },
+        {
+          "row": 20,
+          "col": 13
+        },
+        {
+          "row": 20,
+          "col": 14
+        },
+        {
+          "row": 20,
+          "col": 15
+        },
+        {
+          "row": 20,
+          "col": 16
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 3
+      },
+      "positiveStructure": "Vet",
+      "negativeStructure": "Security Office",
+      "imageName": "house 4x4.png",
+      "fillColor": "hsl(215deg 66% 46%)",
+      "borderColor": "hsl(215deg 52% 25%)",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 10,
+      "name": "House",
+      "row": 17,
+      "col": 4,
+      "footprint": {
+        "width": 3,
+        "height": 4,
+        "label": "3x4"
+      },
+      "occupiedCells": [
+        {
+          "row": 17,
+          "col": 4
+        },
+        {
+          "row": 17,
+          "col": 5
+        },
+        {
+          "row": 17,
+          "col": 6
+        },
+        {
+          "row": 18,
+          "col": 4
+        },
+        {
+          "row": 18,
+          "col": 5
+        },
+        {
+          "row": 18,
+          "col": 6
+        },
+        {
+          "row": 19,
+          "col": 4
+        },
+        {
+          "row": 19,
+          "col": 5
+        },
+        {
+          "row": 19,
+          "col": 6
+        },
+        {
+          "row": 20,
+          "col": 4
+        },
+        {
+          "row": 20,
+          "col": 5
+        },
+        {
+          "row": 20,
+          "col": 6
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 3
+      },
+      "positiveStructure": "Vet",
+      "negativeStructure": "Security Office",
+      "imageName": "house 3x4.png",
+      "fillColor": "hsl(213deg 71% 52%)",
+      "borderColor": "hsl(213deg 57% 30%)",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 11,
+      "name": "House",
+      "row": 17,
+      "col": 7,
+      "footprint": {
+        "width": 3,
+        "height": 4,
+        "label": "3x4"
+      },
+      "occupiedCells": [
+        {
+          "row": 17,
+          "col": 7
+        },
+        {
+          "row": 17,
+          "col": 8
+        },
+        {
+          "row": 17,
+          "col": 9
+        },
+        {
+          "row": 18,
+          "col": 7
+        },
+        {
+          "row": 18,
+          "col": 8
+        },
+        {
+          "row": 18,
+          "col": 9
+        },
+        {
+          "row": 19,
+          "col": 7
+        },
+        {
+          "row": 19,
+          "col": 8
+        },
+        {
+          "row": 19,
+          "col": 9
+        },
+        {
+          "row": 20,
+          "col": 7
+        },
+        {
+          "row": 20,
+          "col": 8
+        },
+        {
+          "row": 20,
+          "col": 9
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 3
+      },
+      "positiveStructure": "Vet",
+      "negativeStructure": "Security Office",
+      "imageName": "house 3x4.png",
+      "fillColor": "hsl(213deg 71% 52%)",
+      "borderColor": "hsl(213deg 57% 30%)",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 12,
+      "name": "House",
+      "row": 17,
+      "col": 10,
+      "footprint": {
+        "width": 3,
+        "height": 4,
+        "label": "3x4"
+      },
+      "occupiedCells": [
+        {
+          "row": 17,
+          "col": 10
+        },
+        {
+          "row": 17,
+          "col": 11
+        },
+        {
+          "row": 17,
+          "col": 12
+        },
+        {
+          "row": 18,
+          "col": 10
+        },
+        {
+          "row": 18,
+          "col": 11
+        },
+        {
+          "row": 18,
+          "col": 12
+        },
+        {
+          "row": 19,
+          "col": 10
+        },
+        {
+          "row": 19,
+          "col": 11
+        },
+        {
+          "row": 19,
+          "col": 12
+        },
+        {
+          "row": 20,
+          "col": 10
+        },
+        {
+          "row": 20,
+          "col": 11
+        },
+        {
+          "row": 20,
+          "col": 12
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 0,
+        "Resident": 3
+      },
+      "positiveStructure": "Vet",
+      "negativeStructure": "Security Office",
+      "imageName": "house 3x4.png",
+      "fillColor": "hsl(213deg 71% 52%)",
+      "borderColor": "hsl(213deg 57% 30%)",
+      "textColor": "#ffffff"
+    },
+    {
+      "id": 13,
+      "name": "Warehouse",
+      "row": 13,
+      "col": 13,
+      "footprint": {
+        "width": 8,
+        "height": 4,
+        "label": "8x4"
+      },
+      "occupiedCells": [
+        {
+          "row": 13,
+          "col": 13
+        },
+        {
+          "row": 13,
+          "col": 14
+        },
+        {
+          "row": 13,
+          "col": 15
+        },
+        {
+          "row": 13,
+          "col": 16
+        },
+        {
+          "row": 13,
+          "col": 17
+        },
+        {
+          "row": 13,
+          "col": 18
+        },
+        {
+          "row": 13,
+          "col": 19
+        },
+        {
+          "row": 13,
+          "col": 20
+        },
+        {
+          "row": 14,
+          "col": 13
+        },
+        {
+          "row": 14,
+          "col": 14
+        },
+        {
+          "row": 14,
+          "col": 15
+        },
+        {
+          "row": 14,
+          "col": 16
+        },
+        {
+          "row": 14,
+          "col": 17
+        },
+        {
+          "row": 14,
+          "col": 18
+        },
+        {
+          "row": 14,
+          "col": 19
+        },
+        {
+          "row": 14,
+          "col": 20
+        },
+        {
+          "row": 15,
+          "col": 13
+        },
+        {
+          "row": 15,
+          "col": 14
+        },
+        {
+          "row": 15,
+          "col": 15
+        },
+        {
+          "row": 15,
+          "col": 16
+        },
+        {
+          "row": 15,
+          "col": 17
+        },
+        {
+          "row": 15,
+          "col": 18
+        },
+        {
+          "row": 15,
+          "col": 19
+        },
+        {
+          "row": 15,
+          "col": 20
+        },
+        {
+          "row": 16,
+          "col": 13
+        },
+        {
+          "row": 16,
+          "col": 14
+        },
+        {
+          "row": 16,
+          "col": 15
+        },
+        {
+          "row": 16,
+          "col": 16
+        },
+        {
+          "row": 16,
+          "col": 17
+        },
+        {
+          "row": 16,
+          "col": 18
+        },
+        {
+          "row": 16,
+          "col": 19
+        },
+        {
+          "row": 16,
+          "col": 20
+        }
+      ],
+      "departmentScores": {
+        "Parks and Rec": 0,
+        "Health": 0,
+        "Transportation": 0,
+        "Library": 0,
+        "Police": 0,
+        "Fire": 0,
+        "Education": 0,
+        "Animal Control": 0,
+        "Business": 1,
+        "Resident": -3
+      },
+      "positiveStructure": "Training Centre",
+      "negativeStructure": "School",
+      "imageName": "warehouse.png",
+      "fillColor": "hsl(244deg 70% 57%)",
+      "borderColor": "hsl(244deg 56% 35%)",
+      "textColor": "#1f1f1f"
+    }
+  ],
+  "nextPlacementId": 18,
+  "showBuildings": true,
+  "overrideZoning": false
+}
