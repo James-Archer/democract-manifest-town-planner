@@ -613,6 +613,15 @@
     statusMessage = 'Plan and zoning cleared.'
   }
 
+  function resetToStartingLayout() {
+    if (!window.confirm('Replace the current plan with the initial setup?')) {
+      return
+    }
+
+    selectedPlacementId = null
+    applySnapshot(startingLayout, 'initial setup')
+  }
+
   function paintZone(row, col) {
     if (showBuildings && occupancy[row][col] !== null) {
       statusMessage = 'Cannot re-zone a cell occupied by a building.'
@@ -1350,6 +1359,9 @@
         >{showBuildings ? 'Hide Buildings' : 'Show Buildings'}</button
       >
       <button type="button" class="secondary" on:click={clearPlan}>Clear Plan</button>
+      <button type="button" class="secondary" on:click={resetToStartingLayout}
+        >Reset to Initial Setup</button
+      >
       {#if placementMode}
         <button type="button" class="secondary" on:click={() => cancelPlacement()}
           >Cancel Placement</button
